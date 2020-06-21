@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html land = "ru">
+
+	<head>
+		<title>Игра: быки и коровы</title>
+
+		<meta charset = "UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<div class="rules">
+				<p class="rule">ПРАВИЛА: <br> Компьютер задумывает четыре различные цифры из 0,1,2,...9. Игрок делает ходы, чтобы узнать эти цифры и их порядок. Каждый ход состоит из четырёх цифр, 0 может стоять на первом месте. В ответ компьютер показывает число отгаданных цифр, стоящих на своих местах (число быков 🐂) и число отгаданных цифр, стоящих не на своих местах (число коров 🐮). <br> <br> Пример: <br> Компьютер задумал 0834. <br> Игрок сделал ход 8134. <br> Компьютер ответил: 2 быка (цифры 3 и 4) и 1 корова (цифра 8).</p>
+			</div>
+			<div class="nix">
+				<div class="trys">
+				</div>
+				<div class="right">
+					<div class="cows">
+					</div>
+					<div class="buttons-block">
+						<div class="input">
+							<form name="form">
+								<input type="text" name="textview" readonly="True" maxlength="4">
+							</form>
+						</div>
+						<div class="item" onclick="four(7)">7</div>
+						<div class="item" onclick="four(8)">8</div>
+						<div class="item" onclick="four(9)">9</div>
+						<div class="item" onclick="four(4)">4</div>
+						<div class="item" onclick="four(5)">5</div>
+						<div class="item" onclick="four(6)">6</div>
+						<div class="item" onclick="four(1)">1</div>
+						<div class="item" onclick="four(2)">2</div>
+						<div class="item" onclick="four(3)">3</div>
+						<div class="item" onclick="four(0)">0</div>
+						<div class="item back" onclick="back()">&larr;</div>
+						<div class="item check" onclick="startcheck()">&check;</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/main.js"></script>
+	</body>
+</html>
